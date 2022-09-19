@@ -1,0 +1,12 @@
+<!doctype html>
+<title>Hello from Flask</title>
+{% if not recording %}
+<form action="/start">
+<button type="submit">Start recording</button>
+</form>
+{% else %}
+<form action="/stop">
+  <button type="submit">Stop recording</button>
+</form>
+{% endif %}
+
